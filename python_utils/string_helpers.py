@@ -11,7 +11,14 @@ def char_frequency(s):
 
 # using the first function inside the second function
 def is_anagram(s,t):
+    if len(s) != len(t):
+        return False
     return char_frequency(s) == char_frequency(t)
+
+def test_is_anagram():
+    assert is_anagram('anagram','nagaram') == True
+    assert is_anagram('rat','car') == False
+
 
 def contains_duplicates(nums):
     seen = set()
@@ -29,3 +36,6 @@ if __name__ == "__main__":
     print(is_anagram('rat','car'))
     print(contains_duplicates([1,2,3,1]))
     print(contains_duplicates([1,2,3,4]))
+    test_is_anagram()
+    
+
