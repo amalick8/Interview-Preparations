@@ -30,6 +30,18 @@ def contains_duplicates(nums):
 
     return False
 
+def two_sum_indices(nums,target):
+    storage = {}
+
+    for i in range(len(nums)):
+        num = nums[i]
+        needed = target - num
+        if needed in storage:
+            return [storage[needed],i]
+        storage[num] = i
+
+    return []
+
 if __name__ == "__main__":
     print(char_frequency('hello'))
     print(is_anagram('anagram','nagaram'))
@@ -37,5 +49,8 @@ if __name__ == "__main__":
     print(contains_duplicates([1,2,3,1]))
     print(contains_duplicates([1,2,3,4]))
     test_is_anagram()
+    print(two_sum_indices([2,7,11,15],9))
+
+
     
 

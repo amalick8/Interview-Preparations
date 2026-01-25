@@ -47,5 +47,5 @@ print(is_anagram('anagram','nagaram'))
 # One loop is O(n)
 # Loop inside loop is O(n^2)
 
-
-
+    
+    
