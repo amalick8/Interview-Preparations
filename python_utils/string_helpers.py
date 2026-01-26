@@ -42,6 +42,23 @@ def two_sum_indices(nums,target):
 
     return []
 
+def max_profit(prices):
+    min_price = prices[0]
+    max_profit = 0
+
+    for i in range(len(prices)):
+        price = prices[i]
+        profit = price - min_price
+        if min_price > price:
+            min_price = price
+        if max_profit < profit:
+            max_profit = profit
+
+    return max_profit
+        
+def test_max_profit():
+    assert max_profit([7,1,5,3,6,4]) == 5
+
 if __name__ == "__main__":
     print(char_frequency('hello'))
     print(is_anagram('anagram','nagaram'))
@@ -50,7 +67,7 @@ if __name__ == "__main__":
     print(contains_duplicates([1,2,3,4]))
     test_is_anagram()
     print(two_sum_indices([2,7,11,15],9))
-
+    test_max_profit
 
     
 
