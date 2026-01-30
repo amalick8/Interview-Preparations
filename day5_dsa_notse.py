@@ -8,4 +8,16 @@
 # One starts on the right
 # They move towards each other
 
+# This pattern exists because the brute force way is slow
+# Brute Force:
+# Reverse the string
+# Compare it to the orignal
+# Or compare every character with every other character
+
+# Smarter thinking
+# Compare the first and last
+# Move inward
+# Stop as soon as somethign does not match
+
+# When:
 # 
