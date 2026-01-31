@@ -43,3 +43,39 @@ def valid_palindrome(s):
         right -= 1
 
     return True
+
+def binary_search(nums,target):
+    left = 0
+    right = len(nums) - 1
+    
+
+    while left <= right:
+        mid = left + (right - left) // 2
+        if nums[mid] == target:
+            return mid
+        if nums[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return -1
+
+# Time complexity:
+# How long does the alogirithim take as the input gets bigger
+# How many steps does it take
+# How many operations do we do
+# O(n): Check everything once
+# O(n^2): Nested loops (slow)
+# O(log n): cut in half each time 
+
+# Space complexity: 
+# How much extra memory does this use
+# We only count the extra memory
+# Using a few variables = O(1) space
+# Creating a new array or hashmap = O(n) space
+# Uses left, right and mid
+
+
+    
+
+
