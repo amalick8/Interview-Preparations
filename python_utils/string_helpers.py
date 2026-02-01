@@ -80,6 +80,10 @@ def binary_search(nums,target):
             right = mid - 1
     return -1 
 
+def test_binary_search():
+    assert binary_search([1,3,5,7,9],9) == 4
+    assert binary_search([1,3,5,7,9],11) == -1
+
 def is_palindrome(s):
     left = 0
     right = len(s) - 1
@@ -116,7 +120,8 @@ if __name__ == "__main__":
     print(two_sum_indices([2,7,11,15],9))
     test_max_profit()
     test_is_palindrome()
-
+    test_binary_search()
+    
 
     
 
