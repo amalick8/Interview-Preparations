@@ -47,4 +47,28 @@ print(binary_search([1,3,5,7,9],9))
 # At the end:
 #   Stack must be empty to be valid
 
-  
+def is_valid(s):
+    pile = []
+    matches = {
+        ')' : '(',
+        ']' : '[',
+        '}' : '{'
+    }
+
+    for char in s:
+        if char in '([{':
+            pile.append(char)
+        else:
+            if len(pile) == 0:
+                return False
+        
+            top = pile[-1]
+
+            if top != matches[char]:
+                return False
+            
+            pile.pop()
+
+    return len(pile) == 0
+
+            

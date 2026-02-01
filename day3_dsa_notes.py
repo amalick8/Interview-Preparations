@@ -44,3 +44,19 @@ def maxProfit(prices):
 
 print(maxProfit([7,1,2,3,4,5,6]))
     
+# Stacks shoudl be used wehn you need to:
+# Track order of operations
+# Handle nested structures
+# Match things that close in the reverse order they opened
+# Always access the most recnet item
+
+# Last thing in is the first thing out
+# You only ever:
+# push (add to top)
+# pop (remove from the top)
+# peek (look at the top)
+
+# What was the last thing?
+# Undo the most recent action
+# Does this close what I just opened?
+# Nested or Layered structure
