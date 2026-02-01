@@ -56,6 +56,30 @@ def max_profit(prices):
 
     return max_profit
 
+def is_sorted(nums):
+    for i in range(len(nums)-1):
+        if nums[i] > nums[i+1]:
+            return False
+    return True
+
+
+def binary_search(nums,target):
+    if not is_sorted(nums):
+        return -1
+        
+    left = 0
+    right = len(nums) - 1
+
+    while left <= right:
+        mid = left + (right-left) // 2
+        if nums[mid] == target:
+            return mid
+        if nums[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1 
+
 def is_palindrome(s):
     left = 0
     right = len(s) - 1

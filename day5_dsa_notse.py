@@ -74,8 +74,3 @@ def binary_search(nums,target):
 # Using a few variables = O(1) space
 # Creating a new array or hashmap = O(n) space
 # Uses left, right and mid
-
-
-    
-
-
