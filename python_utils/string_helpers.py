@@ -110,6 +110,36 @@ def test_is_palindrome():
 def test_max_profit():
     assert max_profit([7,1,5,3,6,4]) == 5
 
+def is_valid_parentheses(s):
+    pile = []
+    match = {
+        ')' : '(',
+        '}' : '{',
+        ']' : '['
+    }
+    
+    for char in s:
+        if char in '{([':
+            pile.append(char)
+        else:
+            if len(pile) == 0:
+                return False
+            top = pile[-1]
+
+            if top != match[char]:
+                return False
+            
+            pile.pop()
+
+    return len(pile) == 0
+
+def test_is_valid_parentheses():
+    assert is_valid_parentheses("()") == True
+    assert is_valid_parentheses("()[]{}") == True
+    assert is_valid_parentheses("(]") == False
+    assert is_valid_parentheses("([)]") == False
+    assert is_valid_parentheses("") == True
+
 if __name__ == "__main__":
     print(char_frequency('hello'))
     print(is_anagram('anagram','nagaram'))
@@ -121,7 +151,9 @@ if __name__ == "__main__":
     test_max_profit()
     test_is_palindrome()
     test_binary_search()
-    
+    test_is_valid_parentheses()
+    print(is_valid_parentheses("(]"))
+
 
     
 
