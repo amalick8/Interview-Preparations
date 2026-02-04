@@ -55,6 +55,16 @@ def is_valid(s):
     
 
 
+def above_threshold (lst, threshold):
+    new_lst = []
+
+    for item in lst:
+        if item > threshold:
+            new_lst.append(item)
+    return new_lst
+
+print(above_threshold([8,2,13,11,4,10,14],10))
+
 
 
 
