@@ -51,7 +51,10 @@ def is_valid(s):
                 return False
             
             pile.pop() 
-    return len(pile) == 0
+    return len(pile) == 0\
+    
+
+
 
 
 
