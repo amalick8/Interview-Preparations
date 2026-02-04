@@ -50,10 +50,9 @@ def is_valid(s):
             if top != match[char]:
                 return False
             
-            pile.pop()
-        
-    
+            pile.pop() 
     return len(pile) == 0
+
 
 
             
