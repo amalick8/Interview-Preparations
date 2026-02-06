@@ -140,6 +140,41 @@ def test_is_valid_parentheses():
     assert is_valid_parentheses("([)]") == False
     assert is_valid_parentheses("") == True
 
+
+class ListNode:
+    def __init__(self, val = 0, next = None):
+        self.val = val
+        self.next = next
+
+def reverse_linked_list(head):
+    if head == None:
+        return None
+    prev = None
+    current = head
+    while current is not None:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+
+    return prev
+
+def test_reverse_linked_list():
+    a = ListNode(1)
+    b = ListNode(2)
+    c = ListNode(3)
+
+    a.next = b
+    b.next = c
+
+    new_head = reverse_linked_list(a)
+    
+    assert new_head.val == 3
+    assert new_head.next.val == 2
+    assert new_head.next.next.val == 1
+    assert new_head.next.next.next is None
+
+
 if __name__ == "__main__":
     print(char_frequency('hello'))
     print(is_anagram('anagram','nagaram'))
@@ -153,6 +188,7 @@ if __name__ == "__main__":
     test_binary_search()
     test_is_valid_parentheses()
     print(is_valid_parentheses("(]"))
+    test_reverse_linked_list()
 
 
     
