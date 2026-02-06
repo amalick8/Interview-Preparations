@@ -53,20 +53,30 @@ def is_valid(s):
             pile.pop() 
     return len(pile) == 0\
     
+# A linked list node has two parts:
+# A value
+# A pointer to the next node
 
+# node(1).next = node(2)
+# node(2).next = node(3)
+# node(3).next = None
 
-def above_threshold (lst, threshold):
-    new_lst = []
+# Reverse requires:
+# 1 > 2 > 3 > None
+# 3 > 2 > 1 > None
 
-    for item in lst:
-        if item > threshold:
-            new_lst.append(item)
-    return new_lst
+def reverse_list(head):
+    if head == None:
+        return None
+    prev = None
+    current = head
+    while current is not None:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node 
 
-print(above_threshold([8,2,13,11,4,10,14],10))
+    return prev
 
-
-
-
-            
+print(reverse_list())
 
