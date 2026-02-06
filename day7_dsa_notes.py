@@ -80,3 +80,7 @@ def reverse_list(head):
 
 print(reverse_list())
 
+# I reverse the list iteratively using three pointers.
+# I traverse the list once, so the time complexity is O(n)
+# I only use constant extra space, so the space complexity is O(1)
+
