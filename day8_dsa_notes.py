@@ -92,5 +92,33 @@ def merge_two_lists(l1,l2):
 # Careful thinking
 
 # What is a pointer in python terms:
+# A pointer is just a varaible that stores where something is
+# l1 = l1.next means move my reference to the next node
 
+# How traversal works
+while current:
+    current = current.next 
+# Walk forward until you hit None
+# This is how every linked list algorithim works
+# No indexes, no jumping and only arrows
 
+# Why it feels weird:
+# There is no i
+# There is no len
+# Everything is relevant to the current node
+
+# Time Complexity:
+# You can only move forward
+# You visit nodes one by one
+# 1 traversal = O(n)
+# 2 traversals back to back = O(n)
+# Merging two lists = O(n+m)
+
+# Multiple traversals in sequence = linear
+# Traversals inside traversals = quadratic
+# O(n) vs O(n^2)
+
+# A linked list algorithim is just walking arrows forward
+# and changing where arrows point.
+
+# Time complexity demands on how many times you walk those arrows
