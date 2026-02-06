@@ -75,5 +75,22 @@ def merge_two_lists(l1,l2):
 # a value
 # a pointer (arrow) to the next box
 
+# 1 > 3 > 5 > None
+
+# Why not just arrays?
+# Arrays:
+# Fast random access (arr[5])
+# Hard to insert/remove in the middle
+
+# Linked Lists:
+# Slow random access
+# Easy to arrange pointers
+
+# In interviews, linked lists exist to test:
+# Pointer logic
+# Traversal
+# Careful thinking
+
+# What is a pointer in python terms:
 
 
