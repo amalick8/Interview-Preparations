@@ -169,7 +169,7 @@ def merge_sorted_lists(l1,l2):
 def test_merge_sorted_lists():
     a1 = ListNode(1)
     a2 = ListNode(2)
-    a3 = ListNode(3)
+    a3 = ListNode(4)
 
     a1.next = a2
     a2.next = a3
@@ -235,6 +235,8 @@ if __name__ == "__main__":
     test_is_valid_parentheses()
     print(is_valid_parentheses("(]"))
     test_reverse_linked_list()
+    test_merge_sorted_lists()
+    
 
 
     
