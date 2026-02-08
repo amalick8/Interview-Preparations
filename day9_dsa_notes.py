@@ -91,14 +91,26 @@ def merged_sorted_list(l1,l2):
 # Customer service systems
 
 def merge(nums1, m, nums2, n):
-    for num in range(len(nums1)-1):
-        if nums1[num] == 0:
-            nums1.pop(num)
-    for num in range(len(nums2)-1):
-        if nums2[num] == 0:
-            nums2.pop(num)
-    
-    new_list = nums1 + nums2
-    new_list.sort()
-    return new_list
+    i = m - 1 # index of last real digit in nums 2
+    j = n - 1 # index of last digit in nums 2
+    k = m + n - 1 # last position in nums1
+
+    while j >= 0:
+        if i>=0 and nums1[i] > nums2[j]:
+           nums1[k] = nums1[i] 
+           i -= 1
+        else:
+            nums1[k] = nums2[j]
+            j -= 1
+        k -= 1
+
+    return nums1
+
+# Each element is looked at once, so time complexity is O(m+n)
+# We don't create a new array so space complexity is O(1)
+
+
+        
+
+
 
