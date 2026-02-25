@@ -187,3 +187,35 @@ def countdown(m,n):
         print(i)
 print(countdown(5,1))
 
+def power(base,exponent):
+    return base**exponent
+print(power(2,3))
+
+def list_length(lst):
+    count = 0
+    for item in lst:
+        count += 1
+    return count
+print(list_length([2,4,6,8,10]))
+
+def factorial(n):
+    count = 1
+    for i in range(n,1,-1):
+        count = count * i
+    return count
+print(factorial(3))
+
+def squares(nums):
+    square_list = []
+    for num in nums:
+        square_list.append(num**2)
+    return square_list
+print(squares([1,2,3,4]))
+
+def multiply_list(lst,multiplier):
+    new_list = []
+    for num in lst:
+        new_list.append(num*multiplier)
+    return new_list
+print(multiply_list([1,2,3],3))
+
