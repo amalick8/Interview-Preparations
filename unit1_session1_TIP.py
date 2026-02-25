@@ -219,3 +219,18 @@ def multiply_list(lst,multiplier):
     return new_list
 print(multiply_list([1,2,3],3))
 
+def count_evens(list):
+    even_count = 0
+    for num in list:
+        if num%2 == 0:
+            even_count += 1
+        else:
+            even_count += 0
+    return even_count
+lst1 = [1,5,7,9]
+count1 = count_evens(lst1)
+print(count1)
+
+lst2 = [2,4,6,8]
+count2 = count_evens(lst2)
+print(count2)
