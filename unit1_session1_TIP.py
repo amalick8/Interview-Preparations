@@ -53,4 +53,123 @@ print(blackjack(24))
 print(blackjack(19))
 print(blackjack(10))
 
+def get_first(list):
+    if len(list) >= 1:
+        return list[0]
+    else:
+        return None
+print(get_first([1,2,3]))
+print(get_first([]))
 
+def get_last(list):
+    if len(list) >= 1:
+        return list[-1]
+    else:
+        return None
+print(get_last([1,2,3]))
+print(get_last([]))
+
+def counter(stop):
+    for i in range(1,stop+1):
+        print(i) 
+print(counter(7))
+
+def sum_ten():
+    storage = 0
+    for i in range(0,11):
+        storage += i
+    return storage
+print(sum_ten())
+
+def sum_positive_range(stop):
+    storage = 0
+    for i in range(0,stop+1):
+        storage += i
+    return storage
+print(sum_positive_range(6))
+
+def sum_range(start,stop):
+    storage = 0
+    for i in range(start,stop+1):
+        storage += i
+    return storage
+print(sum_range(3,9))
+
+def print_negatives(lst):
+    for i in lst:
+        if i < 0:
+            print(i)
+print(print_negatives([3,-2,2,1,-5]))
+print(print_negatives([1,2,3,4,5]))
+
+def greet_user(name):
+    print(f'Hello {name}!')
+greet_user('Michael')
+
+def difference(a,b):
+    return a - b
+print(difference(8,3))
+
+def concatenate_list(nums):
+    return nums+nums
+print(concatenate_list([1,2,3,4]))
+
+def sleep_assessment(hours):
+    if hours < 8:
+        return "Oof, go back to bed!"
+    elif hours >= 8 and hours <= 10:
+        return "You got a good night's rest!"
+    else: 
+        return "You're a sleep prodigy!"
+print(sleep_assessment(10))
+print(sleep_assessment(4))
+print(sleep_assessment(12))
+print(sleep_assessment(9))
+
+def calculate_tip(bill,service_quality):
+    if service_quality == 'poor':
+        return bill * 0.10
+    elif service_quality == 'average':
+        return bill * 0.15
+    elif service_quality == 'excellent':
+        return bill * 0.20
+    else:
+        return None
+tip1 = calculate_tip(44.53, "average")
+print(tip1)
+tip2 = calculate_tip(44.53, "poor")
+print(tip2)
+tip3 = calculate_tip(44.53, "excellent")
+print(tip3)
+
+def rock_paper_scissors(player1,player2):
+    if player1 == 'rock' and player2 == 'scissors':
+        return 'Player1 wins'
+    elif player1 == 'scissors' and player2 == 'paper':
+        return 'Player1 wins'
+    elif player1 == 'paper' and player2 == 'rock':
+        return 'Player1 wins'
+    elif player1 == player2:
+        return 'Tie'
+    if player1 == 'rock' and player2 == 'paper':
+        return 'Player2 wins'
+    elif player1 == 'paper' and player2 == 'scissors':
+        return 'Player2 wins'
+    elif player1 == 'scissors' and player2 == 'rock':
+        return 'Player2 wins'
+print(rock_paper_scissors("rock", "rock"))
+rock_paper_scissors("rock", "rock")
+print(rock_paper_scissors("scissors", "rock"))
+print(rock_paper_scissors("scissors", "paper"))
+print(rock_paper_scissors("rock", "paper"))
+print(rock_paper_scissors("paper", "rock"))
+    
+def halve_lst(lst):
+    result = []
+    for number in lst:
+        halved = number//2
+        result.append(halved)
+    return result
+print(halve_lst([2,4,6,8]))
+
+def above_threshold(lst,threshold)
