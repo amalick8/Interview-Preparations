@@ -172,3 +172,18 @@ def halve_lst(lst):
     return result
 print(halve_lst([2,4,6,8]))
 
+def above_threshold(lst,threshold):
+    storage = []
+    for number in lst:
+        if number > threshold:
+            storage.append(number)
+    return storage
+lst = [8,2,13,11,4,10,14]
+result = above_threshold(lst, 10)
+print(result)
+
+def countdown(m,n):
+    for i in range(m,n-1,-1):
+        print(i)
+print(countdown(5,1))
+
