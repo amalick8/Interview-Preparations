@@ -80,25 +80,3 @@ print(find_divisors(6))
 
 
 def move_zeroes(nums):
-# sure
-# www.linkedin.com/in/ammar-malick-1023b9278
-# you see it on your end? ya kk add me. on i t
-    # can you put your linkedin here please?
-    # havent seen an invite
-    # give me yours
-    # your good lol
-    # give me a min 
-
-    # I am new to this l
-    
-
-    # okay i gotchu. 
-    # do you have a linkedin account 
-    # I think I just followed you on it 
-    # click the 3 dots and lcick connect
-    # that way i follow you back 
-    # and you build connections which is what matters
-    # thank you so much 
-    # of course i got it. 
-    # always make sure to click connect ok? will do 
-            
