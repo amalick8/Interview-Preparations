@@ -77,6 +77,3 @@ def find_divisors(n):
     return new_list
 print(find_divisors(6))
 
-
-
-def move_zeroes(nums):
