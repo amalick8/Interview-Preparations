@@ -35,9 +35,17 @@ def check_num(lst,nums):
 print(check_num([5,2,3,9,10],9))
 print(check_num([5,2,3,9,10],4))
 
+def max_difference(lst):
+    sorted_lst = sorted(lst)
+    return lst[-1]-lst[0]
+print(max_difference([1,2,3,4,5]))
 
 
-def max_dif
+
+
+   
+            
+
 
 
 
