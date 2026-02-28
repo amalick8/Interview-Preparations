@@ -77,3 +77,9 @@ def find_divisors(n):
     return new_list
 print(find_divisors(6))
 
+def funct():
+    final_ans = 0
+    for num in range(1,6):
+        final_ans += num
+    return final_ans*2
+print(funct())
