@@ -32,3 +32,47 @@ print(create_dictionary(keys,values))
 
 
 #Problem3
+# If not target in dictionary:
+#return False
+#dictionary.get(key):
+#print "Key "+ key,
+#print "Value "+Value
+
+def print_pair(dictionary, target):
+    if not target in dictionary:
+        print('That pair does not exist!')
+    else:
+        val = dictionary.get(target)
+        print("Key: ", target)
+        print("Value: ", val)
+
+dictionary = {"spongebob": "squarepants", "patrick": "star", "squidward": "tentacles"}
+print_pair(dictionary, "patrick")
+print_pair(dictionary, "plankton")
+print_pair(dictionary, "spongebob")
+
+#Problem4
+#Take in two sets of parameters that are integers
+#Loop through both and add them up
+#If sum or keys is larger than sum or values, return keys, vice versa
+#if equal, return balanced
+
+def keys_v_values(dictionary):
+    count_values = 0
+    count_keys = 0
+    for k, v in dictionary.items():
+        count_values += v
+        count_keys += k  
+    if count_values > count_keys:
+        return 'Values'
+    elif count_values == count_keys:
+        return 'Balanced'
+    else:
+        return 'Keys'
+dictionary1 = {1:10, 2:20, 3:30, 4:40, 5:50, 6:60}
+greater_sum = keys_v_values(dictionary1)
+print(greater_sum)
+dictionary2 = {100:10, 200:20, 300:30, 400:40, 500:50, 600:60}
+greater_sum = keys_v_values(dictionary2)
+print(greater_sum)
+
