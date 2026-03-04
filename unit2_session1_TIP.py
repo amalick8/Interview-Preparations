@@ -76,3 +76,51 @@ dictionary2 = {100:10, 200:20, 300:30, 400:40, 500:50, 600:60}
 greater_sum = keys_v_values(dictionary2)
 print(greater_sum)
 
+#Problem5
+#Check current_inventory if restock key is already there
+#If not, add it and add a number for the updated value
+#If restock key is already there then update the value
+#Return the total inventory
+
+def restock_inventory(current_inventory,restock_list):
+    for i in restock_list:
+        if i in current_inventory:
+            current_inventory[i] += restock_list[i]
+        else:
+            current_inventory[i] = restock_list[i]
+    return current_inventory
+current_inventory = {
+    "apples": 30,
+    "bananas": 15,
+    "oranges": 10
+}
+restock_list = {
+    "oranges": 20,
+    "apples": 10,
+    "pears": 5
+}
+print(restock_inventory(current_inventory,restock_list))
+
+
+#Problem6
+#Iterate through each of the keys
+#Sum all the values and add them up
+#Divide the sum by the length of dictionary
+
+def calculate_gpa(report_card):
+    sum_count = 0
+    for k,v in report_card.items():
+        if v == "A":
+            sum_count += 4
+        elif v == 'B':
+            sum_count += 3
+        elif v == 'C':
+            sum_count += 2
+        elif v == 'D':
+            sum_count += 1
+        else:
+            sum_count += 0
+    return sum_count/len(report_card)
+report_card = {"Math": "A", "Science": "C", "History": "A", "Art": "B", "English": "B", "Spanish": "A"}
+print(calculate_gpa(report_card))
+
