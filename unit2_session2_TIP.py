@@ -63,9 +63,37 @@ common_list = common_keys(dict1, dict2)
 print(common_list)
 '''
 
+print("This is problem 3 here")
+
+'''Write a function that takes in a list of integers nums
+and counts the number of occurrences of each integer. 
+The function returns the result as a dictionary with integers as keys and their counts as values.'''
+
+def count_occurrences(nums):
 
 
+#Provided with a list of integers, I need to find how often each occurs
+#1. create an emoty dictionary 
+#2.interate through the list of integers
+#3.Count how many times each integer occurs
+#return the count as a dictionary 
 
+    '''
+    count = {}
+    for num in nums:
+        if num not in count:
+            count[num] = 1
+        else:
+            count[num] +=1
+    return count
+print(count_occurrences([1, 2, 2, 3, 3, 3, 4]))
+# Input: nums = [1, 2, 2, 3, 3, 3, 4]
+# Output: {1: 1, 2: 2, 3: 3, 4: 1}
+'''
+
+
+print("Problem 4 here")
+#So we're being given a dictionary 
 
 
 
