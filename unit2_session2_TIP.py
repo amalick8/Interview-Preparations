@@ -78,7 +78,6 @@ def count_occurrences(nums):
 #3.Count how many times each integer occurs
 #return the count as a dictionary 
 
-    '''
     count = {}
     for num in nums:
         if num not in count:
@@ -89,9 +88,9 @@ def count_occurrences(nums):
 print(count_occurrences([1, 2, 2, 3, 3, 3, 4]))
 # Input: nums = [1, 2, 2, 3, 3, 3, 4]
 # Output: {1: 1, 2: 2, 3: 3, 4: 1}
-'''
 
-'''
+
+
 
 print("Problem 4 here")
 #So we're being given a dictionary with key = task, values = priorities
@@ -117,7 +116,7 @@ tasks = {"task1": 8, "task2": 10, "task3": 9, "task4": 10, "task5": 7}
 perform_task = (get_highest_priority_task(tasks))
 print(perform_task)
 
-'''
+
 
 #Problem 5: Take in list of int finds the element that appears more than
 #lengh of the list/2. And if there is no majority then return None. 
