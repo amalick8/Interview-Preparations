@@ -32,7 +32,7 @@ items = [("fruits", "apple"), ("vegetables", "carrot"), ("fruits", "banana")]
 print(count_by_category(items))
 
 
-'''print("Problem 1 here")
+print("Problem 1 here")
 def cast_vote(votes, candidate): 
     if candidate not in votes:
         votes[candidate] = 1
@@ -40,7 +40,7 @@ def cast_vote(votes, candidate):
         votes[candidate] += 1
     return votes
 votes = {"Alice": 5, "Bob": 3}
-print(cast_vote(votes, "Gina"))'''
+print(cast_vote(votes, "Gina"))
 
 '''
 print('Problem 2 here')
