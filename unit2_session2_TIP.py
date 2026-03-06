@@ -91,6 +91,7 @@ print(count_occurrences([1, 2, 2, 3, 3, 3, 4]))
 # Output: {1: 1, 2: 2, 3: 3, 4: 1}
 '''
 
+'''
 
 print("Problem 4 here")
 #So we're being given a dictionary with key = task, values = priorities
@@ -109,12 +110,14 @@ def get_highest_priority_task(tasks):
         if priority > count:
             count = priority
             key_removed = task
-    return tasks.pop(key_removed)
-   # return tasks
+    tasks.pop(key_removed)
+    return key_removed
 
 tasks = {"task1": 8, "task2": 10, "task3": 9, "task4": 10, "task5": 7}
 perform_task = (get_highest_priority_task(tasks))
 print(perform_task)
+
+'''
 
 
 
