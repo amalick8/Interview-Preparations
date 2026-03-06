@@ -13,7 +13,7 @@ Logic: want to group and count by category
 4. If not we will increment the existing count
 '''
 
-'''def count_by_category(items):
+def count_by_category(items):
     count_dictionary = {} # starts empty, keys: category, values: count #
 
     for item in items:
@@ -29,7 +29,7 @@ Logic: want to group and count by category
     return count_dictionary
 
 items = [("fruits", "apple"), ("vegetables", "carrot"), ("fruits", "banana")]
-print(count_by_category(items))'''
+print(count_by_category(items))
 
 
 '''print("Problem 1 here")
