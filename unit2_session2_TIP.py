@@ -23,4 +23,8 @@ def count_by_category(items):
 
         if current_category not in count_dictionary:
             # its teh first time seeing it
-            count_dictionary[]
+            count_dictionary[current_category] = 1
+        else:
+            count_dictionary[current_category] += 1
+
+
