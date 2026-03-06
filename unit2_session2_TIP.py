@@ -19,12 +19,26 @@ def count_by_category(items):
     for item in items:
         # item is a tuple, 0, 1
         current_category = item[0]
-        current_name = item[1]
 
         if current_category not in count_dictionary:
             # its teh first time seeing it
             count_dictionary[current_category] = 1
         else:
             count_dictionary[current_category] += 1
+
+    return count_dictionary
+
+items = [("fruits", "apple"), ("vegetables", "carrot"), ("fruits", "banana")]
+print(count_by_category(items))
+
+
+
+
+
+
+
+
+
+
 
 
