@@ -119,6 +119,16 @@ print(perform_task)
 
 '''
 
+#Problem 5: Take in list of int finds the element that appears more than
+#lengh of the list/2. And if there is no majority then return None. 
+
+# Create Dict to store ints and their counts
+# Take in List of Integers
+# Iterate over list and count each integer. 
+# Find n/2
+# Compare counts with n/2
+# If no integer count greater than n/2 return None. 
+
 
 
     
