@@ -16,3 +16,11 @@ Logic: want to group and count by category
 def count_by_category(items):
     count_dictionary = {} # starts empty, keys: category, values: count #
 
+    for item in items:
+        # item is a tuple, 0, 1
+        current_category = item[0]
+        current_name = item[1]
+
+        if current_category not in count_dictionary:
+            # its teh first time seeing it
+            count_dictionary[]
