@@ -93,7 +93,37 @@ print(count_occurrences([1, 2, 2, 3, 3, 3, 4]))
 
 
 print("Problem 4 here")
-#So we're being given a dictionary 
+#So we're being given a dictionary with key = task, values = priorities
+#Remove task with highest priority, retuns the name of task (key)
+
+#1 loop over the dict
+#2 use a count variable that basically updates everytime we go over key / val pair
+#3 At end of iteration, return that key, then remove it from dict
+
+def get_highest_priority_task(tasks):
+    #initialize count 
+    count = 0
+    key_removed = ""
+    #loop over dict
+    for task, priority in tasks.items():
+        if priority > count:
+            count = priority
+            key_removed = task
+    return tasks.pop(key_removed)
+   # return tasks
+
+tasks = {"task1": 8, "task2": 10, "task3": 9, "task4": 10, "task5": 7}
+perform_task = (get_highest_priority_task(tasks))
+print(perform_task)
+
+
+
+    
+        
+        
+
+
+
 
 
 
