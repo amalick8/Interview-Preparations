@@ -19,5 +19,37 @@ def is_pangram(my_str):
     my_str=my_str.lower()
     A=[]
     for l in my_str:
-        if l not in A and 
-    pass
+        if l not in A and l.isalpha():
+            A.append(l)
+        else:
+            pass
+    return len(A)==26
+str2 = "The dog jumped"
+print(is_pangram(str2))
+
+# Problem 4 Version 1
+def reverse_string(my_str):
+    return my_str[::-1]
+print(reverse_string('hello'))
+      
+# Problem 5 Version 1
+# Find the first non repeating character
+# Return this characters index
+def first_unique_char(my_str):
+    dict = {}
+    for letter in my_str:
+        if letter in dict:
+            dict[letter] += 1
+        else:
+            dict[letter] = 1
+    
+    for key, value in dict.items():
+        if value == 1:
+            return my_str.index(key)
+    return -1
+
+print(first_unique_char('leetcode'))
+print(first_unique_char('loveleetcode'))
+
+# Problem 6 Version 1
+
