@@ -1,19 +1,40 @@
-# String are sequences of characters.
-# Common operations: conatenation, slicing, and formatting
-# Useful methods: .lower(), .upper(), .split(), .replace()
+# Version 1, Q1
 
-s = 'Hello World'
-print(s.lower()) # 'hello world'
-print(s.upper()) # 'hello world'
+#Understang:
+'''
+1. We take in a list of strings
+2. Each string represents an integer
+3. We must return these integers as a sum
+'''
+#plan
+'''
+1. Initialize a list
+2. Iterate through the numbers in nums
+3. Translate the strings into integers
+4. Append the integers into the list
+5. Do the sum of the total list
+'''
 
-userName = 'Ammar2026'
-currentTime = 'March 12, 7:10pm'
+def sum_of_number_strings(nums):
+    total = []
+    for num in nums:
+        total.append(int(num))
+    return sum(total)
+    
+nums = ["10", "20", "30"]
+sum = sum_of_number_strings(nums)
+print(sum)
 
-print(f'{userName} has signed in at {currentTime}')
 
-# 1. Understand (input, output )
-def reverse_words(s):
-    pass
-sample_input = ' the sky is blue '
+# Version 1, Q2
 
+#Understang:
+'''
 
+'''
+#plan
+'''
+
+'''
+
+        
