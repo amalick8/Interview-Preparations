@@ -10,3 +10,10 @@ userName = 'Ammar2026'
 currentTime = 'March 12, 7:10pm'
 
 print(f'{userName} has signed in at {currentTime}')
+
+# 1. Understand (input, output )
+def reverse_words(s):
+    pass
+sample_input = ' the sky is blue '
+
+
