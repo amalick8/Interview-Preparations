@@ -83,12 +83,12 @@ s.isalpha() Returns true if all characters in given string are alphabetic letter
 5. return new list
 '''
 
-def reverse_only_letters(s):
-    newString = ""
-    #create a dictionary
-    dicSymboles = {}
-    for item in range(len(s)):
-        if(s[item] == "-"):
+# def reverse_only_letters(s):
+#     newString = ""
+#     #create a dictionary
+#     dicSymboles = {}
+#     for item in range(len(s)):
+#         if(s[item] == "-"):
             
     # for item in range(len(s)-1, -1, -1):
     #     for n in s:
