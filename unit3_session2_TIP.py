@@ -90,17 +90,17 @@ def reverse_only_letters(s):
     for item in range(len(s)):
         if(s[item] == "-"):
             
-    for item in range(len(s)-1, -1, -1):
-        for n in s:
-            if(n.isalph()):
-                if(s[item].isalpha()):
-            else:
+    # for item in range(len(s)-1, -1, -1):
+    #     for n in s:
+    #         if(n.isalph()):
+    #             if(s[item].isalpha()):
+    #         else:
                 
         
 
-        newString += s[item]
-    return newString
+    #     newString += s[item]
+    # return newString
     
-s = "a-bC-dEf-ghIj"
-reversed_s = reverse_only_letters(s)
-print(reversed_s) #j-Ih-gfE-dCba 
+# s = "a-bC-dEf-ghIj"
+# reversed_s = reverse_only_letters(s)
+# print(reversed_s) #j-Ih-gfE-dCba 
